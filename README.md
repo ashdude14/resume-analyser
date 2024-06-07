@@ -1,36 +1,129 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-## Getting Started
 
-First, run the development server:
+# Resume Analyzer
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+Resume Analyzer is a web application that allows users to upload resumes and get analyzed feedback on their content. The frontend is built with Next.js, while the backend is powered by Django. 
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+<i> **This project aims to gather skill on how to integrate LLM with Full Stack Web Application.   </i>
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Table of Contents
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+- [Features](#features)
+- [Prerequisites](#prerequisites)
+- [Installation](#installation)
+- [Environment Variables](#environment-variables)
+- [Usage](#usage)
+- [Endpoints](#endpoints)
+- [Contributing](#contributing)
+- [License](#license)
 
-## Learn More
+## Features
 
-To learn more about Next.js, take a look at the following resources:
+- Upload resumes in various formats (PDF, DOCX, etc.).
+- Analyze resumes for content quality, keyword matching, and more.
+- Provide feedback and suggestions for improvement.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Prerequisites
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+- Node.js
+- npm or yarn
+- Python
+- Django
+- PostgreSQL (or any preferred database)
 
-## Deploy on Vercel
+## Installation
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+### Backend (Django)
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+1. Clone the repository:
+
+    ```sh
+    git clone https://github.com/yourusername/resume-analyzer-backend.git
+    ```
+
+2. Navigate to the backend directory:
+
+    ```sh
+    cd resume-analyzer-backend
+    ```
+
+3. Create a virtual environment:
+
+    ```sh
+    python -m venv venv
+    ```
+
+4. Activate the virtual environment:
+
+    - On Windows:
+
+        ```sh
+        venv\Scripts\activate
+        ```
+
+    - On macOS/Linux:
+
+        ```sh
+        source venv/bin/activate
+        ```
+
+5. Install dependencies:
+
+    ```sh
+    pip install -r requirements.txt
+    ```
+
+6. Run database migrations:
+
+    ```sh
+    python manage.py migrate
+    ```
+
+7. Start the Django development server:
+
+    ```sh
+    python manage.py runserver
+    ```
+
+### Frontend (Next.js)
+
+1. Clone the repository:
+
+    ```sh
+    git clone https://github.com/yourusername/resume-analyzer-frontend.git
+    ```
+
+2. Navigate to the frontend directory:
+
+    ```sh
+    cd resume-analyzer-frontend
+    ```
+
+3. Install dependencies:
+
+    ```sh
+    npm install
+    ```
+
+    or
+
+    ```sh
+    yarn install
+    ```
+
+4. Start the Next.js development server:
+
+    ```sh
+    npm run dev
+    ```
+
+    or
+
+    ```sh
+    yarn dev
+    ```
+
+## Environment Variables
+
+### Backend (Django)
+
