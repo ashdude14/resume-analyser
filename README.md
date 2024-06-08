@@ -14,6 +14,7 @@ Resume Analyzer is a web application that allows users to upload resumes and get
 - [Environment Variables](#environment-variables)
 - [Usage](#usage)
 - [Endpoints](#endpoints)
+- [Refrences](#refrences)
 - [Contributing](#contributing)
 - [License](#license)
 
@@ -126,4 +127,7 @@ Resume Analyzer is a web application that allows users to upload resumes and get
 ## Environment Variables
 
 ### Backend (Django)
+
+### Refrences
+[huggingFace NLP course](https://huggingface.co/learn/nlp-course/chapter1/4?fw=pt)
 
